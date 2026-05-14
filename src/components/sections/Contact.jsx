@@ -5,7 +5,7 @@ import SectionTitle from '../ui/SectionTitle';
 import GoldButton from '../ui/GoldButton';
 
 const WEB3FORMS_KEY = import.meta.env.VITE_WEB3FORMS_KEY || 'YOUR_WEB3FORMS_KEY';
-const WHATSAPP      = import.meta.env.VITE_WHATSAPP_NUMBER || '919876543210';
+const WHATSAPP = import.meta.env.VITE_WHATSAPP_NUMBER || '919876543210';
 
 const WORK_TYPES = ['Bridal Embroidery', 'Blouse Work', 'Saree Border', 'Dupatta Work', 'Casual Kurta', 'Aari Work', 'Custom Design'];
 
@@ -35,16 +35,16 @@ const inputClass =
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', phone: '', workType: '', message: '' });
-  const [errors, setErrors]   = useState({});
-  const [status, setStatus]   = useState('idle'); // idle | sending | success | error
+  const [errors, setErrors] = useState({});
+  const [status, setStatus] = useState('idle'); // idle | sending | success | error
 
   const validate = () => {
     const e = {};
-    if (!form.name.trim())      e.name     = 'Please enter your name.';
-    if (!form.phone.trim())     e.phone    = 'Please enter your phone number.';
+    if (!form.name.trim()) e.name = 'Please enter your name.';
+    if (!form.phone.trim()) e.phone = 'Please enter your phone number.';
     else if (!/^\+?[\d\s\-()]{7,15}$/.test(form.phone)) e.phone = 'Enter a valid phone number.';
-    if (!form.workType)         e.workType = 'Please select a work type.';
-    if (!form.message.trim())   e.message  = 'Please describe your requirement.';
+    if (!form.workType) e.workType = 'Please select a work type.';
+    if (!form.message.trim()) e.message = 'Please describe your requirement.';
     return e;
   };
 
@@ -128,9 +128,9 @@ export default function Contact() {
                 <div className="flex flex-col gap-3 text-sm">
                   <span className="flex items-center gap-2.5 text-warm-white/50">
                     <Phone size={14} className="text-gold-primary flex-shrink-0" />
-                    +91 98765 43210
+                    +91 9047633598
                   </span>
-                  <a href="mailto:hello@dreamweave.in" className="flex items-center gap-2.5 text-warm-white/50 hover:text-gold-primary transition-colors">
+                  <a href="mailto:anithaupthirapandi@gmail.com" className="flex items-center gap-2.5 text-warm-white/50 hover:text-gold-primary transition-colors">
                     <Mail size={14} className="text-gold-primary flex-shrink-0" />
                     hello@dreamweave.in
                   </a>
@@ -144,7 +144,7 @@ export default function Contact() {
               <div className="border-t border-gold-primary/10 pt-5">
                 <p className="font-cinzel text-xs tracking-[0.2em] text-gold-primary uppercase mb-3">Working Hours</p>
                 <p className="font-inter text-xs text-warm-white/50 leading-relaxed">
-                  Monday – Saturday<br/>
+                  Monday – Saturday<br />
                   <span className="text-warm-white/70">10:00 AM – 7:00 PM IST</span>
                 </p>
               </div>
@@ -175,7 +175,7 @@ export default function Contact() {
                     <div>
                       <p className="font-cinzel text-xl text-gold-primary tracking-wider mb-2">Message Sent!</p>
                       <p className="font-inter text-sm text-warm-white/50">
-                        We'll get back to you within 24 hours.<br/>Or WhatsApp us for an instant reply.
+                        We'll get back to you within 24 hours.<br />Or WhatsApp us for an instant reply.
                       </p>
                     </div>
                     <GoldButton variant="outline" onClick={() => setStatus('idle')}>

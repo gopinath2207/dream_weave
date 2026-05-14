@@ -5,26 +5,30 @@ import { Phone, Mail, MapPin, Heart } from 'lucide-react';
 function InstagramIcon({ size = 16, className = '' }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
-      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-      <circle cx="12" cy="12" r="4"/>
-      <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
     </svg>
   );
 }
 
 const FOOTER_LINKS = [
-  { section: 'Explore',  links: [
-    { label: 'Portfolio',   href: '#portfolio' },
-    { label: 'Pricing',     href: '#pricing'   },
-    { label: 'Our Story',   href: '#about'     },
-    { label: 'Reviews',     href: '#reviews'   },
-  ]},
-  { section: 'Services', links: [
-    { label: 'Bridal Work',      href: '#portfolio' },
-    { label: 'Casual Embroidery', href: '#portfolio' },
-    { label: 'Aari Work',        href: '#portfolio' },
-    { label: 'Custom Orders',    href: '#contact'   },
-  ]},
+  {
+    section: 'Explore', links: [
+      { label: 'Portfolio', href: '#portfolio' },
+      { label: 'Pricing', href: '#pricing' },
+      { label: 'Our Story', href: '#about' },
+      { label: 'Reviews', href: '#reviews' },
+    ]
+  },
+  {
+    section: 'Services', links: [
+      { label: 'Bridal Work', href: '#portfolio' },
+      { label: 'Casual Embroidery', href: '#portfolio' },
+      { label: 'Aari Work', href: '#portfolio' },
+      { label: 'Custom Orders', href: '#contact' },
+    ]
+  },
 ];
 
 export default function Footer() {
@@ -67,13 +71,13 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-warm-white/50 hover:text-gold-primary transition-colors"
               >
-                <Phone size={14} /> <span>+91 98765 43210</span>
+                <Phone size={14} /> <span>+91 9047633598</span>
               </a>
               <a
-                href="mailto:hello@dreamweave.in"
+                href="mailto:anithauthirapandi@gmail.com"
                 className="flex items-center gap-2 text-warm-white/50 hover:text-gold-primary transition-colors"
               >
-                <Mail size={14} /> <span>hello@dreamweave.in</span>
+                <Mail size={14} /> <span>anithauthirapandi@gmail.com</span>
               </a>
               <span className="flex items-center gap-2 text-warm-white/50">
                 <MapPin size={14} /> <span>Tamil Nadu, India</span>
@@ -83,7 +87,7 @@ export default function Footer() {
             {/* Social */}
             <div className="flex gap-4 mt-6">
               <a
-                href="https://instagram.com"
+                href="https://instagram.com/au_aari_creation"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Dream Weave Instagram"
